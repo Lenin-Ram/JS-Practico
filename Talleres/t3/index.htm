@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/iconmonstr-chart-3-240.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Promedio, moda, mediana</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <section class="header__nav-links">
+        <a class="header__links-btn" href="../../index.html"> <i class="fas fa-home fcolor"></i>HOME</a>
+        <div class="talleres">
+          <a class="header__links-btn" href="../t1/index.htm"> T1</a>
+          <a class="header__links-btn" href="../t2/index.htm"> T2</a>
+          <a class="header__links-btn" href="../t3/index.htm"> T3</a>
+          <a class="header__links-btn" href="../t4/index.htm"> T4</a>
+        </div>
+        <a class="header__links-btn" href="https://github.com/Sergio9815/curso-practicoJS"><i
+            class="fab fa-github fcolor"></i>GITHUB</a>
+      </section>
+
+    </nav>
+    <section class="header__info">
+      <h1 class="header__info-title">Promedio, moda y mediana</h1>
+      <p class="header__info-desc">Tercer taller del curso práctico de JavaScript 🎈</p>
+    </section>
+  </header>
+  <div class="header-decoration"></div>
+
+  <section class="main">
+    <h2 id="main-title">CÁLCULOS ESTADÍSTICOS</h2>
+    <form action="" class="main__desc-form">
+      <label for="inputValues">Ingrese los valores separados por comas </label>
+      <div class="container">
+        <input class="input" id="inputValues" type="text" placeholder="Example: 15,24,2,17,50">
+        <button type="button" id="clear">Clear</button>
+      </div>
+      <label for="inputValues">Seleccione una operación</label>
+      <div class="select">
+        <div data-option="promedio" id="promedio" class="options">PROMEDIO</div>
+        <div data-option="mediana" id="mediana" class="options">MEDIANA</div>
+        <div data-option="moda" id="moda" class="options">MODA</div>
+      </div>
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+    <span class="result" id="main__result">^_^</span>
+  </section>
+
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
